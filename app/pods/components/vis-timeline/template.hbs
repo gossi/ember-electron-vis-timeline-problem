@@ -1,0 +1,6 @@
+<div id={{elementId}} class={{class}}></div>
+{{yield (hash
+	item=(component 'vis-timeline/item' container=this)
+	group=(component 'vis-timeline/group' container=this)
+	time=(component 'vis-timeline/time' container=this)
+)}}

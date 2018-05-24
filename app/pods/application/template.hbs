@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			{{#vis-timeline id="timeline" options=timelineOptions as |timeline|}}
+				{{timeline.group id="group1"}}
+
+				{{timeline.item start=1000 end=1500 content="works" group="group1"}}
+				{{timeline.item start=2000 end=2500 content="second" group="group1" style="background-color: lightgrey"}}
+				{{timeline.item start=3000 content="box" group="group1"}}
+				{{timeline.item start=4000 end=4500 content="last" group="group1"}}
+			{{/vis-timeline}}
+		</div>
+	</div>
+</div>
